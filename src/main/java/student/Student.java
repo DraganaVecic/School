@@ -14,7 +14,6 @@ public Student() {
      this.yearOfBirth = 0;
 }  
 
- 
     public void setFirstName(String customFirstName) {
         this.firstName = customFirstName;
     }
@@ -41,25 +40,11 @@ public Student() {
         this.yearOfBirth = customYearOfBirth;
       }
    
-   public s1() {
-       this.firstName = "Petar";
-       this.lastName = "Petrovic";
-       this.yearOfBirth = 1990;
-   }
-
-    Student s1 = new Student();
+    public void info(){ 
+    System.out.println("First name: " + getFirstName());
+    System.out.println("Last name: " + getLastName());
+    System.out.println("Year of birth: " + getYearOfBirth());       
     
-    Student s2 = new Student("Petar","Petrovic", 1990);
-    
-    public void showData(){
-        
-    System.out.println("First name: " + s1.getFirstName());
-    System.out.println("Last name: " + s1.getLastName());
-    System.out.println("Year of birth: " + s1.getYearOfBirth());       
-    
-    System.out.println("First name: " + s2.getFirstName());
-    System.out.println(" Last name: " + s2.getLastName());
-    System.out.println("Year of birth " + s2.getYearOfBirth()); 
     }
     
 }

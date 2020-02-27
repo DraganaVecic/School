@@ -19,8 +19,7 @@ public void setMemory(double customMemory) {
 }
 public void setHardDrive (int customHardDrive) {
     this.hardDrive = customHardDrive;
-}
-    
+}   
 public String getOperatingSystem() {
     return this.operatingSystem;
 }
@@ -40,12 +39,12 @@ public Computer(String customOperatingSystem, double customProcessTact, double c
     this.memory = customMemory;
     this.hardDrive = customHardDrive;
     }
-public Computer() {
-    this.operatingSystem = "Linux";
-    this.processTact = 2.4 ;
-    this.memory = 16.0;
-    this.hardDrive = 500;
-}    
+
+public void info() {
+        System.out.println("Process tact: " + getProcessTact());
+        System.out.println("Memory: " + getMemory());
+        System.out.println("Hard drive: " + getHardDrive());
+    }
     
     
     

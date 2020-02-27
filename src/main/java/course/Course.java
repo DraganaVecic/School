@@ -15,32 +15,34 @@ public Course() {
 }
 public void setName(String customName) {
         this.name = customName;
-    }
-    public void setNumberOfClasses (int customNumberOfClasses) {
+}
+public void setNumberOfClasses (int customNumberOfClasses) {
         this.numberOfClasses = customNumberOfClasses;
-    }
-    public void setCodeName(String customCodeName) {
+}
+public void setCodeName(String customCodeName) {
         this.codeName = customCodeName;
-    }
-    
-    public String getName() {
-        return this.name;
-    }
-    public int getNumberOfClasses() {
-        return this.numberOfClasses;
-    }
-    public String getCodeName() {
-        return this.codeName;
-    }
-    public Course(String customName, int customNumberOfClasses, String customCodeName){
-        this.name = customName;
-        this.numberOfClasses = customNumberOfClasses;
-        this.codeName = customCodeName;
-    }
-    public Course(String "QA", int 40, String "pet"){
-        this.name = "QA";
-        this.numberOfClasses = 40;
-        this.codeName = "pet";
 }
     
+public String getName() {
+    return this.name;
 }
+public int getNumberOfClasses() {
+    return this.numberOfClasses;
+}
+public String getCodeName() {
+    return this.codeName;
+}
+
+public Course(String customName, int customNumberOfClasses, String customCodeName){
+    this.name = customName;
+    this.numberOfClasses = customNumberOfClasses;
+    this.codeName = customCodeName;
+}
+ public void info() {
+        System.out.println("Course name: " + getName());
+        System.out.println("Course, number of classes: " + getNumberOfClasses());
+    }
+
+}
+    
+
